@@ -1,0 +1,17 @@
+# Using a basic Ubuntu image as base
+FROM ubuntu:20.04
+
+# Setting up environment
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Updating and installing necessary packages
+RUN apt-get update && apt-get install -y snmpd
+
+# Copy SNMP configuration to the container
+COPY snmpd.conf /etc/snmp/snmpd.conf
+
+# Expose the SNMP port
+EXPOSE 161/udp
+
+# Run the SNMP daemon
+CMD ["snmpd", "-f"]
