@@ -1,5 +1,35 @@
 # Laborprotokoll: SNMP Netzwerk-Simulation mit Docker und Confidentiality & Authenticity
 
+# Index
+
+- [Laborprotokoll: SNMP Netzwerk-Simulation mit Docker und Confidentiality \& Authenticity](#laborprotokoll-snmp-netzwerk-simulation-mit-docker-und-confidentiality--authenticity)
+- [Index](#index)
+  - [Aufgabenstellung:](#aufgabenstellung)
+  - [Verwendete Werkzeuge:](#verwendete-werkzeuge)
+  - [Grundlagen - Theorie:](#grundlagen---theorie)
+    - [Dokcer-Container](#dokcer-container)
+    - [SNMP](#snmp)
+    - [OID und MIB](#oid-und-mib)
+    - [Authentifizierung in SNMPv3](#authentifizierung-in-snmpv3)
+  - [Versuchsdurchführung:](#versuchsdurchführung)
+    - [1. agent demon konfigurieren:](#1-agent-demon-konfigurieren)
+      - [snmpd.conf](#snmpdconf)
+    - [2. Docker-Container erstellen](#2-docker-container-erstellen)
+      - [Dockerfile-Agent:](#dockerfile-agent)
+      - [Dockerfile-Manager:](#dockerfile-manager)
+    - [3. Docker-Images erstellen](#3-docker-images-erstellen)
+    - [4. Docker-Container starten](#4-docker-container-starten)
+      - [kontrolle](#kontrolle)
+    - [5. Confidentiallity und Authenticity](#5-confidentiallity-und-authenticity)
+      - [snmpd.conf](#snmpdconf-1)
+      - [Dockerfile-Manager](#dockerfile-manager-1)
+    - [6. Erstellen von Images und Container](#6-erstellen-von-images-und-container)
+  - [Ergebnise](#ergebnise)
+    - [snmptranslate](#snmptranslate)
+      - [Übersetzung von OIDs zu MIB-Namen](#übersetzung-von-oids-zu-mib-namen)
+      - [Anzeige des MIB-Baums](#anzeige-des-mib-baums)
+    - [snmpwalk](#snmpwalk)
+
 ## Aufgabenstellung:
 
 Ziel ist es ein simuliertes SNMP-Netzwerk mit Confidentiality und Authenticity zu erstellen.
