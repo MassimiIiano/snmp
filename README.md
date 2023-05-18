@@ -2,7 +2,6 @@
 
 # Index
 
-- [Laborprotokoll: SNMP Netzwerk-Simulation mit Docker und Confidentiality \& Authenticity](#laborprotokoll-snmp-netzwerk-simulation-mit-docker-und-confidentiality--authenticity)
 - [Index](#index)
   - [Aufgabenstellung:](#aufgabenstellung)
   - [Verwendete Werkzeuge:](#verwendete-werkzeuge)
