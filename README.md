@@ -255,7 +255,7 @@ docker run -it --name=manager --link agent:agent snmp-manager /bin/bash
 Wir starten diesmal auch die `bash` am manager Container indem wir `bin/bash` am ende hinzufügen
 
 ## Ergebnise
-
+# TODO allgemein erklaren
 ### snmptranslate
 
 "snmptranslate" ist ein Werkzeug, das mit der Net-SNMP-Suite kommt. Es dient dazu, zwischen numerischen und textuellen SNMP-Objektbezeichnern hin und her zu übersetzen, die in MIBs (Management Information Base) definiert sind.
@@ -288,7 +288,7 @@ snmptranslate -IR -Td sysUpTime.0
 ### snmpwalk
 
 ```bash
-snmpwalk -v 3 -u snmpUser -a MD5 -A tosendpass -x DES -X tocryptpass -l authPriv agent system 
+snmpwalk -v 3 -u snmpUser -a MD5 -A tosendpass -x DES -X tocryptpass -l authPriv agent interface 
 ```
 
 Der Befehl `snmpwalk -v 3 -u snmpUser -a MD5 -A tosendpass -x DES -X tocryptpass -l authPriv agent system` verwendet das SNMPv3-Protokoll, um einen SNMP-Agenten nach MIB-Objekten ab "system" zu befragen. Hier ist, was jeder Teil des Befehls bedeutet:
