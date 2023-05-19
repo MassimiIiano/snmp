@@ -64,7 +64,7 @@ In SNMP bezeichnet eine Object Identifier (OID) eine eindeutige Kennung, die ver
 Die Authentifizierung in SNMPv3 erfolgt durch das User-based Security Model (USM), das verschiedene Authentifizierungs- und Verschlüsselungsmechanismen unterstützt. Wir werden  "authPriv" (Authentifizierung und Privatsphäre) verwenden. Die Authentifizierung stellt sicher, dass die SNMP-Nachrichten tatsächlich von einem gültigen Benutzer stammen, während die Verschlüsselung die Vertraulichkeit der Nachrichten gewährleistet. Dabei wird gewöhnlich ein Benutzername und ein Passwort für die Authentifizierung sowie ein weiteres Passwort für die Verschlüsselung genutzt.
 
 ## Versuchsdurchführung:
-
+# TODO kurze zusammenfassung von verlauf
 
 ### 1. agent demon Konfigurieren:
 
