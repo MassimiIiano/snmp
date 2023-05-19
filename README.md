@@ -47,7 +47,7 @@ Ziel ist es ein simuliertes SNMP-Netzwerk mit Confidentiality und Authenticity z
 
 ## Grundlagen - Theorie:
 
-### Dokcer-Container
+### Docker-Container
 
 Docker-Container sind leichtgewichtige, eigenständige Softwarepaketeinheiten, die alles enthalten, was zum Ausführen von Code benötigt wird. In unserem SNMP-Beispiel verwenden wir Container Linking, um eine Verbindung zwischen dem SNMP-Agent und dem SNMP-Manager herzustellen, sodass sie miteinander kommunizieren können.
 
