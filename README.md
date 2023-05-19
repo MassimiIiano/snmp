@@ -68,7 +68,7 @@ Die Authentifizierung in SNMPv3 erfolgt durch das User-based Security Model (USM
 
 ### 1. agent demon Konfigurieren:
 
-Wir erstellen eine Datei zur konfiguration des SNMP-Demon namens `snmpd.conf`
+Wir erstellen eine Datei zur Konfiguration des SNMP-Demon namens `snmpd.conf`
 #### snmpd.conf
 
 ```conf
