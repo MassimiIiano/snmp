@@ -26,7 +26,7 @@
     - [5. Confidentiallity und Authenticity](#5-confidentiallity-und-authenticity)
       - [snmpd.conf](#snmpdconf-1)
       - [Dockerfile-Manager](#dockerfile-manager-1)
-    - [6. Erstellen von Images und Container](#6-erstellen-von-images-und-container)
+    - [6. Container mit AuthPriv](#6-erstellen-von-images-und-container)
   - [Ergebnise](#ergebnise)
     - [snmptranslate](#snmptranslate)
       - [Übersetzung von OIDs zu MIB-Namen](#übersetzung-von-oids-zu-mib-namen)
@@ -236,7 +236,7 @@ ENV MIBS ALL
 RUN apt-get update && apt-get install -y snmp snmp-mibs-downloader
 ```
 
-### 6. Erstellen von Images und Container
+### 6. Container mit AuthPriv
 
 Wir erstellen erneut Docker-Images aus den Dockerfiles:
 
