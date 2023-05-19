@@ -325,3 +325,6 @@ snmpwalk -v 3 -u snmpUser -a MD5 -A tosendpass -x DES -X tocryptpass -l authPriv
 ```
 
 ![snmpwalk](bilder/snmpwalk-interfaces.png)
+
+
+# TODO Fazit
