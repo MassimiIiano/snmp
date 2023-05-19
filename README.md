@@ -26,7 +26,7 @@
     - [5. Confidentiallity und Authenticity](#5-confidentiallity-und-authenticity)
       - [snmpd.conf](#snmpdconf-1)
       - [Dockerfile-Manager](#dockerfile-manager-1)
-    - [6. Container mit AuthPriv](#6-Container-mit-AuthPriv])
+    - [6. Container mit AuthPriv](#6-container-mit-authPriv])
   - [Ergebnise](#ergebnise)
     - [snmptranslate](#snmptranslate)
       - [Übersetzung von OIDs zu MIB-Namen](#übersetzung-von-oids-zu-mib-namen)
