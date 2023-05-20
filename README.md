@@ -6,16 +6,19 @@
 
 # Index
 
+- [Laborprotokoll: SNMP Netzwerk-Simulation mit Docker und Confidentiality \& Authenticity](#laborprotokoll-snmp-netzwerk-simulation-mit-docker-und-confidentiality--authenticity)
+    - [Arbeitsgeber: TFO Max Valier](#arbeitsgeber-tfo-max-valier)
+    - [Author: Massimiliano Mola](#author-massimiliano-mola)
 - [Index](#index)
-  - [Aufgabenstellung:](#aufgabenstellung)
+  - [Aufgabenstellung](#aufgabenstellung)
   - [Verwendete Werkzeuge:](#verwendete-werkzeuge)
   - [Grundlagen - Theorie:](#grundlagen---theorie)
-    - [Dokcer-Container](#dokcer-container)
+    - [Docker-Container](#docker-container)
     - [SNMP](#snmp)
     - [OID und MIB](#oid-und-mib)
     - [Authentifizierung in SNMPv3](#authentifizierung-in-snmpv3)
   - [Versuchsdurchführung:](#versuchsdurchführung)
-    - [1. agent demon konfigurieren:](#1-agent-demon-konfigurieren)
+    - [1. agent demon Konfigurieren:](#1-agent-demon-konfigurieren)
       - [snmpd.conf](#snmpdconf)
     - [2. Docker-Container erstellen](#2-docker-container-erstellen)
       - [Dockerfile-Agent:](#dockerfile-agent)
@@ -28,14 +31,16 @@
       - [Dockerfile-Manager](#dockerfile-manager-1)
     - [6. Container mit AuthPriv](#6-container-mit-authpriv)
   - [Ergebnise](#ergebnise)
+- [TODO allgemein erklaren](#todo-allgemein-erklaren)
     - [snmptranslate](#snmptranslate)
       - [Übersetzung von OIDs zu MIB-Namen](#übersetzung-von-oids-zu-mib-namen)
       - [Anzeige des MIB-Baums](#anzeige-des-mib-baums)
     - [snmpwalk](#snmpwalk)
+- [Fazit](#fazit)
 
-## Aufgabenstellung:
+## Aufgabenstellung
 
-Ziel ist es ein simuliertes SNMP-Netzwerk mit Confidentiality und Authenticity zu erstellen.
+Unsere Aufgabe ist es, eine Netzwerksimulation mit Simple Network Management Protocol (SNMP) zu erstellen. Ziel ist das Einrichten und Konfigurieren von Docker-Containern als SNMP-Agenten und Manager. Zusäzlich sollen man die Vertraulichkeit und Authentizität in unserem SNMP-Setup sicherstellen. Schließlich die Überprüfung der Funktionalität und Sicherheit unseres Systems durch verschiedene SNMP-Operationen. 
 
 ## Verwendete Werkzeuge:
 
@@ -64,8 +69,8 @@ In SNMP bezeichnet eine Object Identifier (OID) eine eindeutige Kennung, die ver
 Die Authentifizierung in SNMPv3 erfolgt durch das User-based Security Model (USM), das verschiedene Authentifizierungs- und Verschlüsselungsmechanismen unterstützt. Wir werden  "authPriv" (Authentifizierung und Privatsphäre) verwenden. Die Authentifizierung stellt sicher, dass die SNMP-Nachrichten tatsächlich von einem gültigen Benutzer stammen, während die Verschlüsselung die Vertraulichkeit der Nachrichten gewährleistet. Dabei wird gewöhnlich ein Benutzername und ein Passwort für die Authentifizierung sowie ein weiteres Passwort für die Verschlüsselung genutzt.
 
 ## Versuchsdurchführung:
-# TODO kurze zusammenfassung von verlauf
 
+Wir werden zunächst Docker verwenden, um ein sicheres Netzwerkumfeld zu schaffen. Dabei erstellen wir zwei Container: den Manager und den Agenten. Wir werden auch eine Konfigurationsdatei für den SNMP-Dienst, snmpd erstellen. In dieser Datei implementieren wir zusätzliche Sicherheitsmaßnahmen, indem wir einen speziellen Benutzer definieren. Dieser Benutzer wird die Befugnis haben, auf die Daten des Agenten sicher zuzugreifen.
 ### 1. agent demon Konfigurieren:
 
 Wir erstellen eine Datei zur Konfiguration des SNMP-Demon namens `snmpd.conf`
@@ -256,9 +261,12 @@ Wir starten diesmal auch die `bash` am manager Container indem wir `bin/bash` am
 
 ## Ergebnise
 # TODO allgemein erklaren
+
+In disem Teil des Protokoll werden wir auf unserem System die Befehle `snmptranslate` und `snmpwalk` ausführen um informazionen von unserem system und dem SNMP-Agent auslesen.
+
 ### snmptranslate
 
-"snmptranslate" ist ein Werkzeug, das mit der Net-SNMP-Suite kommt. Es dient dazu, zwischen numerischen und textuellen SNMP-Objektbezeichnern hin und her zu übersetzen, die in MIBs (Management Information Base) definiert sind.
+`snmptranslate` ist ein Werkzeug, das mit der Net-SNMP-Suite kommt. Es dient dazu, zwischen numerischen und textuellen SNMP-Objektbezeichnern hin und her zu übersetzen, die in MIBs (Management Information Base) definiert sind.
 
 #### Übersetzung von OIDs zu MIB-Namen
 
@@ -327,4 +335,10 @@ snmpwalk -v 3 -u snmpUser -a MD5 -A tosendpass -x DES -X tocryptpass -l authPriv
 ![snmpwalk](bilder/snmpwalk-interfaces.png)
 
 
-# TODO Fazit
+# Fazit
+
+In diesem Projekt haben wir erfolgreich ein SNMP-Netzwerk aufgebaut, bestehend aus einem Manager und einem Agenten, eingebettet in Docker-Containern. Mit der Einrichtung von SNMP und der Schaffung eines sicheren Benutzers zur Datenabfrage, ist es uns gelungen, eine effiziente und sichere Umgebung zur Netzwerküberwachung zu erstellen.
+
+Unser System erfüllt derzeit die grundlegenden Anforderungen für ein effektives Netzwerk-Monitoring. Dennoch gibt es immer Raum für Verbesserungen und Erweiterungen. Beispielsweise könnten wir zusätzliche SNMP-Agenten hinzufügen, um mehrere Netzwerkknoten überwachen zu können. Darüber hinaus könnten wir unsere Konfiguration erweitern, um benutzerdefinierte MIBs (Management Information Base) einzuführen, die spezifischere oder komplexere Netzwerkinformationen bereitstellen können.
+
+Zudem wäre es sinnvoll, das System so anzupassen, dass es automatische Benachrichtigungen versendet, wenn bestimmte Schwellenwerte erreicht oder überschritten werden, was eine proaktivere Netzwerküberwachung ermöglichen würde.
