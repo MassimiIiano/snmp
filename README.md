@@ -342,3 +342,11 @@ In diesem Projekt haben wir erfolgreich ein SNMP-Netzwerk aufgebaut, bestehend a
 Unser System erfüllt derzeit die grundlegenden Anforderungen für ein effektives Netzwerk-Monitoring. Dennoch gibt es immer Raum für Verbesserungen und Erweiterungen. Beispielsweise könnten wir zusätzliche SNMP-Agenten hinzufügen, um mehrere Netzwerkknoten überwachen zu können. Darüber hinaus könnten wir unsere Konfiguration erweitern, um benutzerdefinierte MIBs (Management Information Base) einzuführen, die spezifischere oder komplexere Netzwerkinformationen bereitstellen können.
 
 Zudem wäre es sinnvoll, das System so anzupassen, dass es automatische Benachrichtigungen versendet, wenn bestimmte Schwellenwerte erreicht oder überschritten werden, was eine proaktivere Netzwerküberwachung ermöglichen würde.
+
+# Quellen
+
+- https://stackoverflow.com/questions/72802602/snmp-translate-for-commonobjs
+- https://stackoverflow.com/questions/34797948/format-of-snmpwalk-instruction
+- https://oidref.com/1.3.6.1.2.1 
+- https://stackoverflow.com/questions/63663312/snmpwalk-cannot-find-module 
+- 
