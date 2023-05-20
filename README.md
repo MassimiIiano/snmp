@@ -349,4 +349,3 @@ Zudem wäre es sinnvoll, das System so anzupassen, dass es automatische Benachri
 - https://stackoverflow.com/questions/34797948/format-of-snmpwalk-instruction
 - https://oidref.com/1.3.6.1.2.1 
 - https://stackoverflow.com/questions/63663312/snmpwalk-cannot-find-module 
-- 
