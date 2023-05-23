@@ -337,7 +337,7 @@ snmpwalk -v 3 -u snmpUser -a MD5 -A tosendpass -x DES -X tocryptpass -l authPriv
 
 # Fazit
 
-In diesem Projekt haben wir erfolgreich ein SNMP-Netzwerk aufgebaut, bestehend aus einem Manager und einem Agenten, eingebettet in Docker-Containern. Mit der Einrichtung von SNMP und der Schaffung eines sicheren Benutzers zur Datenabfrage, ist es uns gelungen, eine effiziente und sichere Umgebung zur Netzwerküberwachung zu erstellen.
+In diesem Projekt haben wir erfolgreich ein SNMP-Netzwerk aufgebaut, bestehend aus einem Manager und einem Agenten. Mit der Einrichtung von SNMP und der Schaffung eines sicheren Benutzers zur Datenabfrage, ist es uns gelungen, eine effiziente und sichere Umgebung zur Netzwerküberwachung zu erstellen.
 
 Unser System erfüllt derzeit die grundlegenden Anforderungen für ein effektives Netzwerk-Monitoring. Dennoch gibt es immer Raum für Verbesserungen und Erweiterungen. Beispielsweise könnten wir zusätzliche SNMP-Agenten hinzufügen, um mehrere Netzwerkknoten überwachen zu können. Darüber hinaus könnten wir unsere Konfiguration erweitern, um benutzerdefinierte MIBs (Management Information Base) einzuführen, die spezifischere oder komplexere Netzwerkinformationen bereitstellen können.
 
