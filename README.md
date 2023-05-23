@@ -345,7 +345,7 @@ Zudem wäre es sinnvoll, das System so anzupassen, dass es automatische Benachri
 
 # Quellen
 
-- https://stackoverflow.com/questions/72802602/snmp-translate-for-commonobjs
-- https://stackoverflow.com/questions/34797948/format-of-snmpwalk-instruction
-- https://oidref.com/1.3.6.1.2.1 
-- https://stackoverflow.com/questions/63663312/snmpwalk-cannot-find-module 
+- https://stackoverflow.com/questions/72802602/snmp-translate-for-commonobjs (20.05.2023)
+- https://stackoverflow.com/questions/34797948/format-of-snmpwalk-instruction (20.05.2023)
+- https://oidref.com/1.3.6.1.2.1 (20.05.2023)
+- https://stackoverflow.com/questions/63663312/snmpwalk-cannot-find-module (20.05.2023)
