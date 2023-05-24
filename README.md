@@ -1,4 +1,4 @@
-# Laborprotokoll: SNMP Netzwerk-Simulation mit Docker und Confidentiality & Authenticity
+# Laborprotokoll: SNMP Netzwerk-Simulation mit Confidentiality & Authenticity
 
 ### Arbeitsgeber: TFO Max Valier
 
