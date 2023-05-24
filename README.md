@@ -70,7 +70,7 @@ Die Authentifizierung in SNMPv3 erfolgt durch das User-based Security Model (USM
 ## Versuchsdurchführung:
 
 Wir werden zunächst Docker verwenden, um ein sicheres Netzwerkumfeld zu schaffen. Dabei erstellen wir zwei Container: den Manager und den Agenten. Wir werden auch eine Konfigurationsdatei für den SNMP-Dienst, snmpd erstellen. In dieser Datei implementieren wir zusätzliche Sicherheitsmaßnahmen, indem wir einen speziellen Benutzer definieren. Dieser Benutzer wird die Befugnis haben, auf die Daten des Agenten sicher zuzugreifen.
-### 1. agent demon Konfigurieren:
+### 1. Agent Demon Konfigurieren:
 
 Wir erstellen eine Datei zur Konfiguration des SNMP-Demon namens `snmpd.conf`
 #### snmpd.conf
