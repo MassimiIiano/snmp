@@ -31,7 +31,6 @@
       - [Dockerfile-Manager](#dockerfile-manager-1)
     - [6. Container mit AuthPriv](#6-container-mit-authpriv)
   - [Ergebnise](#ergebnise)
-- [TODO allgemein erklaren](#todo-allgemein-erklaren)
     - [snmptranslate](#snmptranslate)
       - [Übersetzung von OIDs zu MIB-Namen](#übersetzung-von-oids-zu-mib-namen)
       - [Anzeige des MIB-Baums](#anzeige-des-mib-baums)
@@ -260,7 +259,6 @@ docker run -it --name=manager --link agent:agent snmp-manager /bin/bash
 Wir starten diesmal auch die `bash` am manager Container indem wir `bin/bash` am ende hinzufügen
 
 ## Ergebnise
-# TODO allgemein erklaren
 
 In disem Teil des Protokoll werden wir auf unserem System die Befehle `snmptranslate` und `snmpwalk` ausführen um informazionen von unserem system und dem SNMP-Agent auslesen.
 
