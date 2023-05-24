@@ -347,3 +347,4 @@ Zudem wäre es sinnvoll, das System so anzupassen, dass es automatische Benachri
 - https://stackoverflow.com/questions/34797948/format-of-snmpwalk-instruction (20.05.2023)
 - https://oidref.com/1.3.6.1.2.1 (20.05.2023)
 - https://stackoverflow.com/questions/63663312/snmpwalk-cannot-find-module (20.05.2023)
+- https://checkmk.com/blog/how-configure-snmp-linux (22.05.2023)
